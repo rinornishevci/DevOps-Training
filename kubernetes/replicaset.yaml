@@ -18,7 +18,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: nginx
+      - name: nginx-postgres
         image: nginx:1.14.2
         ports:
         - containerPort: 80
