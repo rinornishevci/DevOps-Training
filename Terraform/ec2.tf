@@ -7,6 +7,10 @@ resource "aws_instance" "web" {
     network_interface_id = aws_network_interface.web.id
     device_index = 0
   }
+  
+    filter {
+    name = “architecture”
+    values = [“x86_64"]
 
   tags = {
     Name = "appstellar-rinor-${var.enviroment}"
