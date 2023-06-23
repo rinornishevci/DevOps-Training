@@ -1,3 +1,3 @@
-access_key = "AKIAUR6LRUFASAACS4EF"
-secret_key = "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"
+access_key = ""
+secret_key = ""
 enviroment = "prod"
