@@ -1,16 +1,12 @@
 
 resource "aws_instance" "web" {
   ami           = "${data.aws_ami.ubuntu.id}"
-  instance_type = "t2.nano"
+  instance_type = "t2.micro"
 
   network_interface {
     network_interface_id = aws_network_interface.web.id
     device_index = 0
   }
-  
-    filter {
-    name = “architecture”
-    values = [“x86_64"]
 
   tags = {
     Name = "appstellar-rinor-${var.enviroment}"
