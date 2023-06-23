@@ -6,5 +6,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
+  
+
   owners = ["amazon"] # Canonical
 }
